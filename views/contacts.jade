@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    // - titel på sidan -
+    title
+      | Kennys pizzeria
+    link(rel='stylesheet' href='/stylesheets/index.css')
+    style.
+      body {background-color: lightgray;}
+  body
+    // backround img
+    .imgbox
+      img.menu-picture-fit(src='/images/italy.jpg')
+      .pizza-logo
+        a(href='/')
+          img(src='/images/logo_2d.png' alt='LOGO')
+      .menu-box
+        a(href='/menu')
+          p Meny
+      .contacts-box
+        a(href='/contacts')
+          p Kontakt
+      .order-box
+        a(href='/order')
+          p Beställ
+      .login-box
+        a(href='/profile')
+          img(src='/images/login-pic.png' alt='login' height='90px')
+    .member-form
+      form(action='/action_page.php')
+        h1 Formulär
+        br
+        br
+        label(for='name') Namn:
+        input#name(type='text' name='name' placeholder='Ange ditt namn')
+        br
+        br
+        label(for='email') E-post adress:
+        input#email(type='text' name='email' placeholder='Ange E-post adress')
+        br
+        br
+        label(for='email') Telefon nummer:
+        input#number(type='text' name='number' placeholder='Ange Telefon nummer')
+        br
+        br
+        label(for='member') Medlem
+        input#member(type='radio' name='member')
+        br
+        label(for='member') Ej Medlem
+        input#member(type='radio' name='member')
+        br
+        br
+        input(type='reset' value='Återställ')
+        input(type='reset' value='Submit')
+    .contacts-info
+      h1 Information
+      p
+        | Plats: 
+        br
+        |  Kronhusgatan 000
+      br
+      br
+      p Telefon Nummer: 073-420-69-12
+      br
+      p
+        | Öppet: 
+        br
+        | Mån - Fre   07:00 - 21:00
+        br
+        |  Lör -Sön 10:00 - 20:00

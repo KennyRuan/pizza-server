@@ -1,0 +1,127 @@
+doctype html
+html
+  head
+    // - titel på sidan -
+    title
+      | Kennys pizzeria
+    link(rel='stylesheet' href='/stylesheets/index.css')
+    style.
+      body {background-color: lightgray;}
+  body
+    // backround img
+    .imgbox
+      img.menu-picture-fit(src='/images/italy.jpg')
+      .pizza-logo
+        a(href='/')
+          img(src='/images/logo_2d.png' alt='LOGO')
+      .menu-box
+        a(href='/menu')
+          p Meny
+      .contacts-box
+        a(href='/contacts')
+          p Kontakt
+      .order-box
+        a(href='/order')
+          p Beställ
+      .login-box
+        a(href='/')
+          img(src='/images/login-pic.png' alt='login' height='90px')
+    .pizza-header
+      div
+        h2 Pizza
+    .menu-center
+      div
+        table(width='100%')
+          tbody
+            tr
+              td(rowspan='2')
+              td
+                b
+                  br
+                  |  1. Cifat Pizza - 240 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td Tomat, ost, champinjoner, tonfisk, lök
+            tr
+              td(rowspan='2')  
+              td
+                b
+                  hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                  img(src='/images/pepperoni.jpg' width='250px' height='150px')
+                  br
+                  |  2. China Town Pizza  - 119 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td
+                | Tomat, ost, skinka, räkor, champinjoner 
+                hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                img(src='/images/finepizza.jpg' width='250px' height='150px')
+            tr
+              td(rowspan='2')
+              td
+                b
+                  br
+                  | 3. Good Pizza - 600 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td Tomat, snor, gurka, flugsvamp, gräs
+            tr
+              td(rowspan='2')  
+              td
+                b
+                  hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                  img(src='/images/randompizza.jpg' width='250px' height='150px')
+                  br
+                  | 4. Dunder Pizza - 112 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td
+                | Vitlök, ost, rödlök, majs, annanas 
+                hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                img(src='/images/knaspizza.jpg' width='250px' height='150px')
+            tr
+              td(rowspan='2')
+              td
+                b
+                  br
+                  | 5. Bang Pizza - 432 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td Godis, skinka, banan, nötkött, gräslök
+            tr
+              td(rowspan='2')  
+              td
+                b
+                  hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                  img(src='/images/sinuspizza.jpg' width='250px' height='150px')
+                  br
+                  |  6. Sinus Pizza - 99 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td
+                | Haj, ost, tomat, sand, majs 
+                hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                img(src='/images/stekpizza.jpg' width='250px' height='150px')
+            tr
+              td(rowspan='2')
+              td
+                b
+                  br
+                  | 7. Farlig Pizza - 321 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td Vatten, brunsås, kebab, kyckling, lök
+            tr
+              td(rowspan='4')  
+              td
+                b
+                  hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                  img(src='/images/back.jpg' width='250px' height='150px')
+                  br
+                  |  8. Party Pizza - 999 kr
+                button(type='button') Lägg till i varukorg
+            tr
+              td
+                | Alkohol, bensin, diesel, sten, droger 
+                hr(style='width:100%;text-align:left;margin-left:0' color='green')
+                img(src='/images/bg.jpg' width='250px' height='150px')

@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    // - titel på sidan -
+    title
+      | Kennys pizzeria
+    link(rel='stylesheet' href='/stylesheets/index.css')
+    style.
+      body {background-color: lightgray;}
+  body
+// backround img
+.imgbox
+  img.menu-picture-fit(src='/images/italy.jpg')
+  .pizza-logo
+    a(href='/')
+      img(src='/images/logo_2d.png' alt='LOGO')
+  .menu-box
+    a(href='/menu')
+      p Meny
+  .contacts-box
+    a(href='/contacts')
+      p Kontakt
+  .order-box
+    a(href='/order')
+      p Beställ
+  .login-box
+    a(href='/')
+      img(src='/images/login-pic.png' alt='login' height='90px')
+// varukorg
+.order-info
+  h1 Din Varukorg:
+  br
+  p Sinus Pizza - 1x
+  p Party Pizza - 1x
+  p Cifat Pizza - 1x
+  br
+  #my_form
+    br
+    br
+    label(for='price-tag') Totalt: 1029 kr
+    br
+    br
+    button#nextStep Betala
+  #thank_you(style='display: none;')
+    u Tack för din beställning!
+    br
+script.
+  var nextStep = document.querySelector('#nextStep');
+  nextStep.addEventListener('click', function (e) {
+  e.preventDefault();
+  // Hide first view
+  document.getElementById('my_form').style.display = 'none';
+  // Show thank you message element
+  document.getElementById('thank_you').style.display = 'block';
+  });

@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    // - titel på sidan -
+    title
+      | Kennys pizzeria
+    link(rel='stylesheet', href='/stylesheets/index.css')
+    style.
+      body {background-color: black;}
+  body
+    // backround img
+    .imgbox
+      img.center-fit(src='/images/bg.jpg')
+      .pizza-logo
+        a(href='/')
+          img(src='/images/logo_2d.png' alt='LOGO')
+      .menu-box
+        a(href='/menu')
+          p Meny
+      .contacts-box
+        a(href='/contacts')
+          p Kontakt
+      .order-box
+        a(href='/order')
+          p Beställ
+      .login-box
+        a(href='/profile')
+          img(src='/images/login-pic.png' alt='login' height='90px')
+    .index-info
+      p#info-header
+        | Hej och välkommen till Kennys Pizzeria
+      br
+      p#new-pizza Nyhet! 
+      p Köp 2 Pizzor och betala för 1
+      p
+      br
+      br
+      br
+      br
+      br
+      br
+      a#info-order(href='/menu')
+        p Beställ PIZZA!
